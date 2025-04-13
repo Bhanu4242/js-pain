@@ -3,7 +3,11 @@
 {
 	"name": "Node.js",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+<<<<<<< HEAD
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+=======
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm"
+>>>>>>> 784bc4e (01 Variables.js)
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -15,6 +19,7 @@
 	// "postCreateCommand": "yarn install",
 
 	// Configure tool-specific properties.
+<<<<<<< HEAD
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -35,3 +40,10 @@
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
+=======
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
+>>>>>>> 784bc4e (01 Variables.js)
