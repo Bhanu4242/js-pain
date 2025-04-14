@@ -32,4 +32,32 @@ const myFunction = function(){
     console.log("Hello world");    
 }
 
-console.log(typeof id);
+// console.log(typeof id);
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive), Heap (Non-Primitive)
+
+let myName = "rapardpain"
+
+let anothername = myName
+anothername = "hazard"
+
+// console.log(myName);
+// console.log(anothername);
+
+let userOne = {
+    email :"user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "pain@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
