@@ -1,0 +1,126 @@
+/* Make everything box-sizing border-box for easier layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #404040;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+form p {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 16px;
+}
+
+#height,
+#weight {
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  color: #212121;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid #212121;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
+#results {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  color: #f1f1f1;
+}
+
+#weight-guide {
+  margin-top: 30px;
+  background-color: #555;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#weight-guide h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffe600;
+}
+
+#weight-guide p {
+  text-align: center;
+  font-size: 15px;
+  color: #ddd;
+}
+
+nav {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  #results {
+    font-size: 20px;
+  }
+}
