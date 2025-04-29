@@ -17,7 +17,7 @@ switch (month) {
         console.log("feb");
         break;
     case "march":
-        console.log("march");
+        console.log("exactly!");
         break;
     case "april":
         console.log("april");

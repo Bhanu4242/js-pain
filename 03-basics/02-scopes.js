@@ -12,46 +12,46 @@ if (true) {
 // console.log(c);
 
 
-function one () {
-    const username = "pain"
+// function one () {
+//     const username = "pain"
 
-    function two() {
-        const website = "youtube"
-        console.log(username);
-    }
-    // console.log(website);
+//     function two() {
+//         const website = "youtube"
+//         console.log(username);
+//     }
+//     // console.log(website);
 
-    two()
-}
+//     two()
+// }
 
 // one()
 
-if (true) {
-    const username = "pain"
-    if (username === "pain") {
-        const website = " youtube"
-        // console.log(username + website);
+// if (true) {
+//     const username = "pain"
+//     if (username === "pain") {
+//         const website = " youtube"
+//         console.log(username + website);
         
-    }
-    // console.log(website);
-}
-// console.log(username);
+//     }
+//     // console.log(website);
+// }
+// // console.log(username);
 
 
 // ++++++++++++++++++++++ interesting ++++++++++++++++++++++++++
 
 
-console.log(addone(5))
+// console.log(addone(5))
 
-function addone(num) {
-    return num +1
-}
+// function addone(num) {
+//     return num +1
+// }
     
     
 
-// ---------- expressions ---------------
+// // ---------- expressions ---------------
 
-addTwo(5)
 const addTwo = function (num) {
     return num + 2
 }
+console.log(addTwo(5));
