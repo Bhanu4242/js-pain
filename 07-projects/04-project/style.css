@@ -1,0 +1,201 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Navbar */
+  nav {
+    width: 100%;
+    background: #1e1e1e;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  }
+  
+  nav a {
+    color: #f0a500;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #f0a500;
+  }
+  
+  /* Wrapper */
+  #wrapper {
+    background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+    border-radius: 16px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    margin-top: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align: center;
+    animation: slideUp 0.8s ease-out;
+    transition: transform 0.3s;
+  }
+  
+  #wrapper:hover {
+    transform: scale(1.01);
+  }
+  
+  /* Headings */
+  #wrapper h1 {
+    color: #f0a500;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Paragraphs */
+  #wrapper p {
+    margin: 10px 0;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+  }
+  
+  .form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #ddd;
+  }
+  
+  .guessField {
+    padding: 12px;
+    font-size: 1.05rem;
+    border-radius: 8px;
+    border: none;
+    background: #333;
+    color: #fff;
+    transition: 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+  }
+  
+  .guessField:focus {
+    background: #444;
+    box-shadow: 0 0 10px #f0a500, inset 0 0 5px #f0a500;
+  }
+  
+  /* Submit button */
+  .guessSubmit {
+    padding: 12px;
+    background: #f0a500;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(240, 165, 0, 0.4);
+  }
+  
+  .guessSubmit:hover {
+    background: #ffb300;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 179, 0, 0.5);
+  }
+  
+  /* Results */
+  .resultParas {
+    margin-top: 25px;
+    font-size: 1.1rem;
+  }
+  
+  .resultParas span {
+    font-weight: bold;
+    color: #03dac6;
+  }
+  
+  .lowOrHi h2 {
+    margin-top: 20px;
+    color: #00e676;
+    animation: popUp 0.5s ease-out;
+  }
+  
+  /* New Game Button */
+  .button h2 {
+    margin-top: 25px;
+    padding: 12px;
+    background: #ff3d00;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: bounce 1s infinite alternate;
+    box-shadow: 0 4px 12px rgba(255, 61, 0, 0.4);
+  }
+  
+  .button h2:hover {
+    background: #e53935;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(255, 61, 0, 0.6);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes popUp {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    #wrapper {
+      padding: 20px;
+    }
+  
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .form {
+      gap: 10px;
+    }
+  
+    .guessSubmit {
+      font-size: 0.95rem;
+    }
+  }
+  
